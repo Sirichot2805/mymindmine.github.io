@@ -18,7 +18,7 @@ body {
   padding:1em;
 }
 .grid-item{
-  border: 1px solid #fff;
+  border: 1px solid #00000;
 }
 .grid2{
   padding: 3%;
@@ -36,6 +36,7 @@ body {
   text-align: center;
   justify-content: center;
 }
+
 .grid1 .Pic-P02{
   max-width: 90%;
   padding: 5px 5px;
@@ -57,7 +58,12 @@ body {
 }
 .navbar.sticky{
   padding: 15px 0 ;
-  background: crimson;
+  background: #FA8072;
+}
+.btn{
+  background-color: Transparent;
+  border: none;
+  cursor:pointer;
 }
 .navbar .max-width{
   display: flex;
@@ -67,8 +73,8 @@ body {
 
 .navbar .logo a{
   font-size: 40px;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 1000;
+  color: black;
   text-decoration: none;
 }
 .navbar  .logo a span{
@@ -76,12 +82,12 @@ body {
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-  color: #fff;
+  color: white;
 }
 .navbar .menu li a{
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
+  color: black;
+  font-size: 25px;
+  font-weight: 550;
   margin-left: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -99,7 +105,7 @@ body {
 
 /*menu btn styling*/
 .menu-btn{
-  color: #fff;
+  color: black;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -111,32 +117,26 @@ body {
   background-repeat:no-repeat;
   background-position: center;
   height: 100vh;
-  color: #fff;
+  color: black;
   min-height: 500px;
   font-family: 'Ubuntu',sans-serif;
 }
-.html-tag01{
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #FF6B6B;
-}
-.html-tag02{
-  font-size: 30px;
-  float: right;
-  margin-top: 20px;
-  color: #FF6B6B;
-}
-.orage{
-  color:#FB9300;
-}
-.green{
-  color:#9EDE73;
-}
+
 .home .max-width {
-  margin: auto 0 auto 40px;
+  margin: 15% 0 auto 40px;
 }
 .home .home-content .text-1 {
   font-size: 27px;
+}
+.home-content-2 .fab{
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 3rem;
+  color: black;
+}
+.home-content-2 .fab:hover{
+  color: #BB371A;
+  transition: all 0.3s ease;
 }
 .home .home-content .text-2 {
   font-size: 75px;
@@ -148,7 +148,7 @@ body {
   margin: 5px 0
 }
 .home .home-content .text-3 span{
-  color: crimson;
+  color: #BB371A;
 }
 
 /*responsive media query start*/
