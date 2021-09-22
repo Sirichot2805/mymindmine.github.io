@@ -37,7 +37,6 @@ html{
   align-items:center ;
   justify-content: space-between;
 }
-
 .navbar .logo a{
   font-size: 40px;
   font-weight: 1000;
@@ -69,7 +68,6 @@ html{
 .navbar.sticky .menu li a:hover{
   color: #fff;
 }
-
 /*menu btn styling*/
 .menu-btn{
   color: black;
@@ -88,7 +86,6 @@ html{
   min-height: 500px;
   font-family: 'Ubuntu',sans-serif;
 }
-
 .home .max-width {
   margin: 15% 0 auto 40px;
 }
@@ -118,7 +115,6 @@ html{
   color: #BB371A;
 }
 /*about me section*/
-
 .about .about-container{
   display: flex;
   margin: 2% 3%;
@@ -154,10 +150,15 @@ html{
   color: red;
 }
 /*Skill section*/
+.skil-contain{
+  border-color: black;
+  border: 1px;
+}
 .skill-container{
-  display: grid;
+  display: inline-flex;
   height:100%;
-  place-items:center;
+  justify-content: center;
+  margin: 2% 3%;
 
 }
 .skill-bar{
@@ -174,11 +175,12 @@ html{
   margin-top: 0px;
 }
 .skill-bar .head-skill-bar {
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 800;
+  color: #808080;
   padding-top: 3%;
   padding-bottom: 2%;
-  text-align: center;
+  text-align: left;
 }
 .skill-bar .bar-container .bar .info span{
 
@@ -252,23 +254,68 @@ html{
     opacity: 1;
   }
 }
+.processline.mongoDB span::after{
+  content: "55%";
+}
+.processline.mongoDB span{
+  width:  55%;
+  background: #4BA13E;
+}
+.fas.mongoDB{
+  color: #248641;
+}
+.processline.ReactJs span::after{
+  content: "40%";
+}
+.processline.ReactJs span{
+  width:  40%;
+  background: #60DAFF;
+}
+.fab.ReactJs{
+  color: #192F3D;
+}
+.processline.php span::after{
+  content: "65%";
+}
+.processline.php span{
+  width:  65%;
+  background: #BFC1EE;
+}
+.fab.php{
+  color: #4B568B;
+}
+.fas.code{
+  color:#808080;
+}
+.fab.html{
+  color: #cf361c;
+}
+.fab.css{
+  color: #0e589f;
+}
+.fab.Js{
+  color: #cb9036;
+}
 .processline.html span::after{
   content: "80%";
 }
 .processline.html span{
   width:  80%;
+  background: #de4b1f;
 }
 .processline.css span::after{
   content: "70%";
 }
 .processline.css span{
   width:  70%;
+  background: #278fc9;
 }
 .processline.Js span::after{
   content: "55%";
 }
 .processline.Js span{
   width:  55%;
+  background: #dfa91c;
 }
 
 /*responsive media query start*/
