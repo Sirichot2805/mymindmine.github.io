@@ -118,9 +118,11 @@ html{
   color: #BB371A;
 }
 /*about me section*/
+
 .about .about-container{
   display: flex;
-  margin: 0 3%;
+  margin: 2% 3%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 .about .about-container .about-img{
   width: 500px;
@@ -128,7 +130,7 @@ html{
 }
 .about .about-container .about-text-container{
   text-align: center;
-  padding: 5% 0;
+  padding: 5% 2%;
 }
 .about .about-container .about-text-head{
   margin-bottom: 3%;
@@ -151,6 +153,124 @@ html{
 .about-text-my01 span{
   color: red;
 }
+/*Skill section*/
+.skill-container{
+  display: grid;
+  height:100%;
+  place-items:center;
+
+}
+.skill-bar{
+  width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 2%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.skill-bar .bar{
+  margin: 20px 0;
+}
+.skill-bar .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bar .head-skill-bar {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.skill-bar .bar-container .bar .info span{
+
+  font-size: 25px;
+  font-weight: 300;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }}
+.skill-bar .bar .processline {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0 , 0, 0, 0.05),
+                    0px 1px rgba(255 , 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.skill-bar .bar-container .bar .info .icon-bar{
+  margin-bottom: 5px;
+  font-size: 40px;
+  margin-right: 1%;
+}
+.bar .processline span{
+  height: 100%;
+  width:80%;
+  background: #FA8072;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .processline span::before{
+  position: absolute;
+  content: "";
+  right: 0;
+  top:-10px;
+  width:0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color:#000;
+}
+.bar .processline span::after{
+  position: absolute;
+  right: 0;
+  top:-28px;
+  color:#fff;
+  background: #000;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.processline.html span::after{
+  content: "80%";
+}
+.processline.html span{
+  width:  80%;
+}
+.processline.css span::after{
+  content: "70%";
+}
+.processline.css span{
+  width:  70%;
+}
+.processline.Js span::after{
+  content: "55%";
+}
+.processline.Js span{
+  width:  55%;
+}
+
 /*responsive media query start*/
 @media (max-width:999px) {
   .max-width {
@@ -227,4 +347,12 @@ html{
     font-size: 12px;
     margin-bottom: 10px;
   }
+}
+/*footer section*/
+footer{
+  margin-top: 3%;
+  background-color:#FA8072;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
 }
